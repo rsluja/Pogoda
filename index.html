@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet' type='text/css'>
+	<title>Prognoza Pogody</title>
+</head>
+<body>
+    <section class="main-panel">
+      <section class="nav">  
+        <input type="text" class="input" placeholder="Sprawdź pogodę dla miasta..." /> 
+        <button class="button"></button>
+      </section>
+      <hr>
+      <div class="spinner">
+          <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+      </div>
+      <section class="title"></section>
+      <div id="weather" class="weather-info margin">
+        <ul></ul>
+      </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

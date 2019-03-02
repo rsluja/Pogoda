@@ -1,0 +1,138 @@
+h1, h2 {
+  font-family:georgia,garamond,serif;;
+}
+html { 
+  background: url("images/clouds.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-panel {
+   /* Full height */
+   height: 100%; 
+ 
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.margin {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 10;
+  margin: 5;
+  color: white;
+  display: inline-grid;
+}
+
+ul p {
+  font-size: 21px;
+    font-style: italic;
+}
+
+ul li {
+  color: black;
+  display: block
+}
+
+code {
+  padding: 20px;
+  margin: 0;
+  display: block;
+}
+
+.nav {
+  text-align:center;
+  padding-top: 1%;
+  padding-bottom: 1%
+}
+.weather-info{
+  text-align: center
+}
+.input {
+  padding: 10px 16px;
+  width: 330px;
+}
+
+.button {
+  background-image: url("images/loupe.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent; /*visible only icon instead of button*/
+  border: none; /*Remove borders */
+  outline: none; /*nie widać ramki po kliknieciu*/
+  padding: 12px 16px; /* Some padding */
+  cursor: pointer; /*see Mouse cursor as a pointer when on hover*/
+  opacity: 1; /*przezroczystosc*/
+  /*these two put icon on input*/
+  margin-left: -40px;
+  padding-top: 22px;
+}
+
+.title {
+  text-align: center;
+  color:white;
+  /* font-size: 16px; */
+  /* font-style: italic; */
+  font-size: 50px;
+}
+
+.description {
+  font-weight: bold;
+  font-style: italic;
+}
+
+li img {
+  padding-left: 29px;
+}
+
+
+/* spinner */
+.spinner {
+  display: none;
+  text-align: center
+}
+
+.spinner.visible {
+  display: block;
+}
+
+.lds-ring {
+display: inline-block;
+position: relative;
+width: 64px;
+height: 64px;
+}
+.lds-ring div {
+box-sizing: border-box;
+display: block;
+position: absolute;
+width: 51px;
+height: 51px;
+margin: 6px;
+border: 6px solid #fff;
+border-radius: 50%;
+animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
